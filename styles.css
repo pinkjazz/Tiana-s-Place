@@ -1,0 +1,380 @@
+/* Player Spotify fixo no canto inferior direito */
+.spotify-player-bottom {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    width: 300px;
+    height: 152px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.spotify-player-bottom:hover {
+    opacity: 1;
+}
+.spotify-player {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    width: 300px;
+    height: 152px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.spotify-player:hover {
+    opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.box-mom {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: -43px;
+}
+
+.contact-button,
+.button-form {
+    background-color: #76A646;
+    color: #F2E8C9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 200px;
+    height: 45px;
+    margin-top: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-button:hover,
+.button-form:hover {
+    background-color: #BF8034;
+    transition: 0.5s ease-in-out;
+}
+
+.contact-button:active,
+.button-form:active {
+    background-color: #dfab6b;
+    opacity: 0.9;
+}
+
+.tiana-img {
+    width: 200px;
+    height: auto;
+}
+
+.container-1 {
+    width: 65%;
+
+}
+
+.container-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.788) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.925) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.link-whatsapp img {
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.tiana-intro {
+    color: #F2E8C9;
+    font-size: 35px;
+    margin-top: 10px;
+    font-family: 'Kapakana', cursive;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.header img {
+    width: 60px;
+    top: 20px;
+
+}
+
+.header a {
+    color: #85A653;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #BF8034;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.header a:active {
+    color: #BF8034;
+    opacity: 0.7;
+}
+
+.contact-form {
+    background-color: #F2E8C9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    gap: 15px;
+    z-index: 20;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: left 1s ease-in-out;
+}
+
+.contact-form input:first-of-type {
+    margin-top: 15px;
+}
+
+.close-form {
+    position: absolute;
+    top: -1px;
+    right: 2px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #402319;
+    cursor: pointer;
+    z-index: 21;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.2s;
+}
+
+.close-form:hover {
+    color: #BF8034;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #BF8034;
+    padding-left: 20px;
+    outline: #402319;
+}
+
+textarea {
+    width: 270px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid #BF8034;
+    padding-left: 20px;
+    outline: #402319;
+    padding-top: 15px;
+}
+
+.mask-form {
+    visibility: hidden;
+    position: fixed;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+    transition: visibility 1s ease-in-out;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.background img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.backmask {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.788) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.925) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.services-container {
+    background-color: rgba(242, 232, 201, 0.87);
+    display: flex;
+    width: 800px;
+    height: 400px;
+    margin: 80px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1 {
+    color: #76A646;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: "Delius Swash Caps", cursive;
+
+}
+
+.services-description {
+    color: #402319;
+    font-size: 19px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Delius Swash Caps", cursive;
+}
+
+.services-description2 {
+    color: #402319;
+    font-size: 16px;
+    margin: 8px 0;
+    font-family: "Delius Swash Caps", cursive;
+}
+
+.services-list {
+    color: #BF8034;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 10px;
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: 300;
+    font-size: 18px;
+    text-shadow: 1px 1px 8px #BF8034;
+}
+
+.back-link {
+    display: block;
+    margin: 30px auto 0 auto;
+    color: #BF8034;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Delius Swash Caps", cursive;
+    text-align: center;
+    text-shadow: 1px 1px 8px #F2E8C9;
+}
+.back-link:hover {
+    color: #76A646;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.back-link:active {
+    color: #F2E8C9;
+    opacity: 0.7;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .spotify-player, .spotify-player-bottom {
+        display: none;
+    }
+
+
+    .mask {
+        background: linear-gradient(109deg, rgba(10, 12, 16, 0.877) 15%, rgba(10, 12, 16, 0.822) 50%, rgba(10, 12, 16, 0.925) 85%);
+    }
+    .box-mom {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: -20px;
+    }
+
+    .tiana-intro {
+        font-size: 30px;
+    }
+
+    .container-1 {
+        width: 90%;
+    }
+
+    .services-container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .services-description,
+    .services-description2 {
+        font-size: 16px;
+    }
+
+    .services-list {
+        font-size: 13px;
+        align-items: normal;
+        padding: 20px;
+    }
+
+    .header {
+       /* flex-direction: column;*/
+        margin: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header img {
+        width: 50px;
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+}

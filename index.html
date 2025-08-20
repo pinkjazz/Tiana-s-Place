@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tiana's Place</title>
+
+</head>
+
+<body>
+
+    <div class="spotify-player">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6x1pCJudgIS8Gak9ONrg82?utm_source=generator&theme=0" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="header">
+        <img src="./assets/tiana.svg" alt="Ilustração de Tiana">
+        <a href="index.html">Home</a>
+        <a href="nossos-servicos.html">Nossos Serviços</a>
+    <a id="header-contact-link" href="#">Fale Conosco</a>
+    </div>
+
+    <div class="box-mom">
+        <div class="container-1">
+            <img class="logo" src="./assets/Tiana-logo.svg" alt="Logo tianaspalace">
+            <p class="tiana-intro">🌟 Oi, eu sou Tiana! 🍰 </p>
+            <p class="tiana-intro">Apaixonada por sabores, transformo cada ingrediente em magia. <br> No meu cantinho, preparo tostadas e
+                pratos
+                feitos sob encomenda com amor, frescor e um toque especial, trazendo alegria e gostinho de princesa para
+                a sua mesa! ✨</p>
+
+            <button onclick="cliqueiNoBotao()" class="contact-button">Entre em contato ✨</button>
+        </div>
+
+        <div class="container-2">
+            <img class="tiana-img" src="./assets/Tiana-img.png" alt="Ilustração de Tiana">
+        </div>
+
+    </div>
+
+    <div class="container-video">
+        <video src="./assets/Tostadas-deliciosas.mp4" autoplay loop muted></video>
+        <div class="mask"></div>
+    </div>
+
+
+    <a href="https://wa.me/5511999999999" class="link-whatsapp" target="_blank">
+        <img src="./assets/whatsapp.png" alt="WhatsApp" />
+    </a>
+
+    <form 
+            class="contact-form" 
+            action="https://formcarry.com/s/yAkAI2hUQ3f" 
+            method="POST" 
+            enctype="multipart/form-data">
+        <button type="button" class="close-form" aria-label="Fechar">&times;</button>
+        <input type="text" placeholder="Seu nome" name="name" required>
+        <input type="tel" placeholder="Seu telefone" name="phone" required>
+        <textarea placeholder="Digite seu pedido aqui..." name="order" required></textarea>
+        <button class="button-form" type="submit">Pedir Orçamento</button>
+    </form>
+    <div class="mask-form"></div>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
